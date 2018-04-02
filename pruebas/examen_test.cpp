@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define N 23;
+#define N 9;
 int main(){
     char nombre[N];
-    int numero[N];
-    unsigned Pregunta;
-    unsigned Respuesta;
+    int numero;
+    char Pregunta;
+    char Respuesta_correcta;
+    char Respuesta_incorrecta;
 
     printf(
-            "Elije en el Menu de Alumnos:\n"
+            "Lista de Alumnos:\n"
             "\n"
             "\t1. Diego.\n"
             "\t2. Nacho.\n"
@@ -24,8 +25,12 @@ int main(){
             );
     scanf(" %u", &Pregunta);
     switch(Pregunta){
-        case ¿Quées un char?:
-            printf(" Es una variable")
+        case Pregunta:
+            printf(" Que es Programacion");
+            if(Respuesta_correcta)
+                printf("Tienes 1 punto si Aciertas");
+            else(Respuesta_incorrecta)
+              printf("Tienes resta 1 punto si no Aciertas");
             break;
     }
 

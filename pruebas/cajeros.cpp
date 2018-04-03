@@ -6,13 +6,13 @@ int retirar (int);
 void consultar (int);
 void main ()
 {
- int clave,c=3,opcion,ingreso,saldo=3455;
- while (clave!=5543 && c>=1)
+ int clave,c=3,opcion,ingreso,saldo=95555;
+ while (clave!=9998 && c>=1)
   {
   c--;
   printf ("\nIntroduce tu clave de acceso (4 cifras)");
   scanf ("%i",&clave);
-  if (clave!=5543)
+  if (clave!=9998)
    {
    if (c!=0)
    printf ("\nTe quedan %i intentos",c);

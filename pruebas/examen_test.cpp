@@ -1,12 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define N 9;
+
+#define N 255
+
 int main(){
-    char nombre[N];
-    int numero;
-    char Pregunta;
-    char Respuesta_correcta;
-    char Respuesta_incorrecta;
+    
+    /* SON VARIABLES QUE NO USAS 
+    
+        char nombre[N];
+        int numero;
+        char Respuesta_incorrecta;
+        
+    */
+    
+    int num_pregunta;
+    char respuesta[N];
+    
 
     printf(
             "Lista de Alumnos:\n"
@@ -23,15 +32,20 @@ int main(){
             "\n"
             "\tPregunta: "
             );
-    scanf(" %u", &Pregunta);
-    switch(Pregunta){
-        case Pregunta:
-            printf(" Que es Programacion");
-            if(Respuesta_correcta)
-                printf("Tienes 1 punto si Aciertas");
-            else(Respuesta_incorrecta)
-              printf("Tienes resta 1 punto si no Aciertas");
-            break;
+    scanf(" %u", &num_pregunta);
+    
+    switch(num_pregunta){ //Suele funcionar más si pones un número en el case
+        
+        case 1:
+            printf("\t¿Qué es Programación?");
+            scanf("%s", &respuesta);
+            
+            if(respuesta)
+                printf("\tTienes 1 punto si Aciertas");
+            else
+              printf("\tTienes 1 punto si no Aciertas");
+        break;
+        default: printf("\tElige una opción correcta"); //Esto sirve a método de error para cuándo introduzcan opciones incorrectas
     }
 
 

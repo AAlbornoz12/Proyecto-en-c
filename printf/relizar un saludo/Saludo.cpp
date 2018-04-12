@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define N 100
+#define N 20
 int main(){
 
     char nombre[N];
